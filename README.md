@@ -1,52 +1,146 @@
-# 💰 uangku - Money Tracker App
+# 💰 tracker_money - Aplikasi Pencatat Keuangan
 
-> Aplikasi pencatat keuangan modern untuk mahasiswa kos-kosan dengan fitur CRUD lengkap dan visualisasi pie chart yang menarik!
+<div align="center">
 
-<img width="609" height="894" alt="image" src="https://github.com/user-attachments/assets/7b7ec155-54c3-420a-8c97-72c5f7402a12" />
-<img width="621" height="900" alt="image" src="https://github.com/user-attachments/assets/5bb0fc8f-a6e2-42b1-ba54-46e7fb251189" />
-<img width="601" height="884" alt="image" src="https://github.com/user-attachments/assets/ce6bd620-7125-4db0-b899-cbe0d90087b6" />
+![Flutter](https://img.shields.io/badge/Flutter-3.0+-02569B?style=for-the-badge&logo=flutter)
+![Dart](https://img.shields.io/badge/Dart-3.0+-0175C2?style=for-the-badge&logo=dart)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
+**Aplikasi pencatat keuangan modern untuk mahasiswa kos-kosan dengan fitur CRUD lengkap, visualisasi pie chart, dan fitur inovatif!**
 
+[Fitur](#-fitur-utama) • [Instalasi](#-instalasi) • [Penggunaan](#-cara-penggunaan) • [Dokumentasi](#-dokumentasi)
+
+</div>
+
+---
+
+## 📖 Tentang Aplikasi
+
+**tracker_money** (uangku) adalah aplikasi mobile untuk pencatatan keuangan pribadi yang dirancang khusus untuk mahasiswa kos-kosan. Aplikasi ini membantu Anda mengelola pemasukan dan pengeluaran dengan mudah, dilengkapi visualisasi data yang menarik dan fitur-fitur inovatif.
+
+### 🎯 Kenapa tracker_money?
+
+- ✅ **Mudah Digunakan** - Interface intuitif dan user-friendly
+- 📊 **Visualisasi Menarik** - Pie chart animasi untuk analisis keuangan
+- 💾 **Data Aman** - Tersimpan lokal di perangkat dengan SharedPreferences
+- 🚀 **Fitur Lengkap** - CRUD, statistik, budget tracking, dan lebih banyak lagi
+- 🎨 **Desain Modern** - UI/UX clean dengan animasi smooth
+
+---
 
 ## ✨ Fitur Utama
 
-### 🔄 CRUD dengan SharedPreferences
-- ✅ **Create** - Tambah transaksi baru (pemasukan/pengeluaran)
-- ✅ **Read** - Lihat semua transaksi dengan detail
-- ✅ **Update** - Edit transaksi yang sudah ada
-- ✅ **Delete** - Hapus transaksi yang tidak diperlukan
-- ✅ **Data Persistence** - Data tersimpan permanen di perangkat
+### 🔄 CRUD Transaksi Lengkap
+- **Create** - Tambah transaksi pemasukan/pengeluaran dengan mudah
+- **Read** - Lihat semua transaksi dengan detail lengkap
+- **Update** - Edit transaksi yang sudah ada (swipe left → edit)
+- **Delete** - Hapus transaksi yang tidak diperlukan (swipe left → delete)
+- **Data Persistence** - Data tersimpan permanen di perangkat
 
-### 📊 Visualisasi dengan Pie Chart Animasi
-- 🎨 **Animated Pie Charts** - Grafik tumbuh dengan animasi smooth (1.5 detik)
-- 🎯 **Interactive Touch** - Sentuh bagian chart untuk highlight & detail
-- 🌈 **Color-coded Categories** - 10 warna untuk expense, 8 warna untuk income
-- 📱 **Responsive Design** - Tampilan optimal di semua ukuran layar
-- 🔄 **Pull to Refresh** - Tarik ke bawah untuk update data
+### 📊 Statistik & Visualisasi
+- **Animated Pie Charts** - Grafik tumbuh dengan animasi smooth (1.5 detik)
+- **Interactive Touch** - Sentuh bagian chart untuk highlight & detail
+- **Color-coded Categories** - 10 warna untuk expense, 8 warna untuk income
+- **Detailed Legend** - Emoji, nama kategori, nilai, dan persentase
+- **Pull to Refresh** - Tarik ke bawah untuk update data
 
-### 🎨 UI/UX Modern
-- 🏠 **3 Halaman Utama**: Beranda, Statistik, Profil
-- ⚡ **Smooth Animations** - Transisi halus di semua interaksi
-- 🎭 **Empty States** - Tampilan friendly saat belum ada data
-- 💬 **User Feedback** - SnackBar untuk konfirmasi aksi
-- 🌟 **Clean Design** - Minimalis dan mudah digunakan
+### 💰 Budget Tracking
+- Set budget bulanan dengan mudah
+- Progress bar real-time dengan color-coded status:
+  - 🟢 **Hijau** (< 80%) - Aman
+  - 🟠 **Orange** (80-100%) - Peringatan
+  - 🔴 **Merah** (> 100%) - Melebihi Budget
+- Tampilan sisa budget yang jelas
 
-## 🚀 Quick Start
+### 🚀 Fitur Inovatif
 
-### 1. Install Dependencies
+#### 📱 Share to WhatsApp
+Export laporan keuangan dan share langsung ke WhatsApp dengan format profesional:
+- Generate laporan otomatis dengan emoji
+- Format rapi dan mudah dibaca
+- Breakdown per kategori dengan persentase
+- Summary total pemasukan, pengeluaran, saldo
+
+#### 📄 Export to PDF
+Generate laporan keuangan profesional dalam format PDF:
+- Layout profesional dengan header & footer
+- Summary cards (Income, Expense, Balance)
+- Tabel kategori dengan persentase
+- Daftar transaksi lengkap (max 50)
+- Bisa disimpan atau dibagikan via email/cloud
+
+#### 🔔 Smart Budget Reminder
+Sistem notifikasi pintar untuk membantu Anda konsisten:
+- **Daily Reminder** - Pengingat harian untuk input transaksi (custom waktu)
+- **Budget Alert** - Peringatan otomatis saat mendekati/melebihi budget
+  - 80%: ⚠️ Peringatan Budget
+  - 90%: ⚠️ Budget Hampir Habis!
+  - 100%: ⚠️ Budget Terlampaui!
+
+---
+
+## 🎨 Kategori Transaksi
+
+### 💸 Pengeluaran (Expense)
+- 🍔 **Makanan** - Makan, snack, minuman
+- 🚗 **Transportasi** - Angkot, bensin, ojek online
+- 📚 **Pendidikan** - Buku, fotokopi, pulsa internet
+- 🎮 **Hiburan** - Nonton, game, hobi
+- 💊 **Kesehatan** - Obat, dokter, vitamin
+- 🛍️ **Belanja** - Pakaian, sepatu, aksesoris
+- 📄 **Tagihan** - Kos, listrik, air
+- 📌 **Lainnya** - Kategori lain
+
+### 💰 Pemasukan (Income)
+- 💰 **Gaji** - Freelance, part-time
+- 💵 **Uang Saku** - Dari orang tua
+- 📌 **Lainnya** - Sumber lain
+
+---
+
+## 🚀 Instalasi
+
+### Prasyarat
+- Flutter SDK 3.0 atau lebih baru
+- Dart SDK 3.0 atau lebih baru
+- Android Studio / VS Code
+- Emulator atau perangkat fisik
+
+### Langkah Instalasi
+
+1. **Clone Repository**
+   ```bash
+   git clone https://github.com/shintothemars/tracker_money.git
+   cd tracker_money
+   ```
+
+2. **Install Dependencies**
+   ```bash
+   flutter pub get
+   ```
+
+3. **Run Aplikasi**
+   ```bash
+   flutter run
+   ```
+
+### Build APK
+
+Untuk membuat APK release:
+
 ```bash
-flutter pub get
+# Windows
+BUILD_APK.bat
+
+# Manual
+flutter build apk --release
 ```
 
-### 2. Run Aplikasi
-```bash
-flutter run
-```
+APK akan tersimpan di: `build/app/outputs/flutter-apk/app-release.apk`
 
-### 3. First Run
-Aplikasi akan otomatis membuat 20 transaksi sample untuk demo pie chart!
+---
 
-## 📱 Cara Menggunakan
+## 📱 Cara Penggunaan
 
 ### ➕ Menambah Transaksi
 1. Tap tombol **+** di tengah bottom navigation
@@ -82,6 +176,34 @@ Aplikasi akan otomatis membuat 20 transaksi sample untuk demo pie chart!
 2. Tap icon **Delete** (trash)
 3. ✅ Data terhapus!
 
+### 📱 Share ke WhatsApp
+1. Buka tab **Statistik**
+2. Tap tombol **WhatsApp** (hijau, kanan bawah)
+3. WhatsApp terbuka dengan laporan pre-filled
+4. Pilih kontak atau grup
+5. Kirim message
+
+### 📄 Export ke PDF
+1. Buka tab **Statistik**
+2. Tap tombol **PDF** (merah, kanan bawah)
+3. Tunggu loading (2-3 detik)
+4. Share sheet muncul
+5. Pilih aplikasi untuk save/share PDF
+
+### 🔔 Setup Notifikasi
+1. Buka **Profil** → **Budget & Notifikasi**
+2. **Set Budget**:
+   - Input budget limit
+   - Tap **Save Budget**
+3. **Daily Reminder**:
+   - Toggle **Reminder Harian** ON
+   - Pilih waktu reminder
+4. **Budget Alert**:
+   - Toggle **Alert Budget** ON
+   - Alert otomatis aktif
+
+---
+
 ## 📂 Struktur Proyek
 
 ```
@@ -90,71 +212,36 @@ lib/
 ├── models/
 │   └── transaction_model.dart     # Model transaksi
 ├── services/
-│   └── transaction_service.dart   # ✨ CRUD service layer
+│   ├── transaction_service.dart   # CRUD service layer
+│   ├── budget_service.dart        # Budget calculations
+│   ├── whatsapp_service.dart      # WhatsApp sharing
+│   ├── pdf_service.dart           # PDF generation
+│   └── notification_service.dart  # Notifications
 ├── pages/
-│   ├── home_page.dart            # ✅ Updated: Integrasi SharedPreferences
-│   ├── statistics_page.dart      # ✨ NEW: Pie chart dengan animasi
-│   ├── add_transaction_page.dart # ✅ Updated: Save to SharedPreferences
-│   ├── main_navigation.dart      # ✅ Updated: 3 tabs navigation
-│   ├── login_page.dart
-│   └── profile_page.dart
+│   ├── login_page.dart            # Halaman login
+│   ├── main_navigation.dart       # 3 tabs navigation
+│   ├── home_page.dart             # Beranda dengan list transaksi
+│   ├── statistics_page.dart       # Pie chart & statistik
+│   ├── add_transaction_page.dart  # Form tambah/edit transaksi
+│   ├── profile_page.dart          # Profil user
+│   └── settings_page.dart         # Budget & notification settings
 ├── widgets/
-│   ├── balance_card.dart
-│   ├── transaction_card.dart
-│   ├── custom_button.dart
-│   ├── custom_text_field.dart
-│   └── empty_state.dart
+│   ├── balance_card.dart          # Card saldo
+│   ├── transaction_card.dart      # Card transaksi
+│   ├── budget_indicator.dart      # Budget progress widget
+│   ├── custom_button.dart         # Custom button
+│   ├── custom_text_field.dart     # Custom text field
+│   └── empty_state.dart           # Empty state widget
 ├── theme/
-│   ├── app_theme.dart
-│   └── app_colors.dart
+│   ├── app_theme.dart             # Theme configuration
+│   └── app_colors.dart            # Color palette
 └── utils/
-    ├── currency_formatter.dart
-    ├── date_formatter.dart
-    └── data_seeder.dart          # ✨ NEW: Sample data generator
+    ├── currency_formatter.dart    # Format currency
+    ├── date_formatter.dart        # Format date
+    └── data_seeder.dart           # Sample data generator
 ```
 
-## 🎨 Kategori Transaksi
-
-### 💸 Pengeluaran (Expense)
-- 🍔 **Makanan** - Makan, snack, minuman
-- 🚗 **Transportasi** - Angkot, bensin, ojek online
-- 📚 **Pendidikan** - Buku, fotokopi, pulsa internet
-- 🎮 **Hiburan** - Nonton, game, hobi
-- 💊 **Kesehatan** - Obat, dokter, vitamin
-- 🛍️ **Belanja** - Pakaian, sepatu, aksesoris
-- 📄 **Tagihan** - Kos, listrik, air
-- 📌 **Lainnya** - Kategori lain
-
-### 💰 Pemasukan (Income)
-- 💰 **Gaji** - Freelance, part-time
-- 💵 **Uang Saku** - Dari orang tua
-- 📌 **Lainnya** - Sumber lain
-
-## 🎬 Animasi
-
-### 1. Pie Chart Growth
-- **Duration**: 1500ms
-- **Curve**: easeInOutCubic
-- **Effect**: Chart tumbuh dari 0% ke 100%
-
-### 2. Touch Interaction
-- **Radius**: 60 → 70 (saat di-touch)
-- **Font Size**: 14 → 16 (saat di-touch)
-- **Badge**: Emoji kategori muncul
-- **Shadow**: Soft shadow untuk depth
-
-### 3. Page Transition
-- **Duration**: 300ms
-- **Type**: AnimatedSwitcher
-- **Effect**: Smooth fade between pages
-
-## 🎨 Color Palette
-
-### Expense Colors
-🔴 Red • 🟠 Orange • 🟡 Yellow • 🟢 Green • 🔵 Teal • 🔵 Blue • 🟣 Purple • 🌸 Pink • 🟤 Brown • ⚫ Blue Grey
-
-### Income Colors
-💚 Emerald • 🟢 Green • 🌿 Light Green • 🔵 Cyan • 💙 Light Blue • 🔵 Blue • 💜 Indigo • 🌊 Teal
+---
 
 ## 📦 Dependencies
 
@@ -174,7 +261,16 @@ dependencies:
   
   # Charts
   fl_chart: ^0.66.0
+  
+  # Innovative Features
+  url_launcher: ^6.2.2              # Share to WhatsApp
+  pdf: ^3.10.7                      # PDF generation
+  path_provider: ^2.1.1             # File storage
+  share_plus: ^7.2.1                # Share functionality
+  permission_handler: ^11.1.0       # Permission handling
 ```
+
+---
 
 ## 🔧 Technical Details
 
@@ -197,11 +293,19 @@ dependencies:
 }
 ```
 
+### Architecture
+- **Pattern**: Service Layer Pattern
+- **State Management**: setState (simple & effective)
+- **Data Persistence**: SharedPreferences (JSON)
+- **File Structure**: Feature-based organization
+
 ### Performance
 - ✅ Efficient JSON parsing
 - ✅ Minimal rebuilds dengan setState
 - ✅ Async operations untuk smooth UI
 - ✅ Lazy loading ready
+
+---
 
 ## 🐛 Troubleshooting
 
@@ -222,24 +326,36 @@ flutter run
 - Pull to refresh
 - Restart aplikasi
 
+### Notifikasi tidak muncul?
+- Pastikan permission POST_NOTIFICATIONS diizinkan
+- Cek settings notifikasi di sistem
+- Test dengan tombol "Test Notifikasi"
+
 ### Reset data?
 ```bash
-# Uninstall app
+# Uninstall app atau clear app data
 flutter clean
 flutter run
 ```
 
-## 📚 Dokumentasi Lengkap
+---
 
-- 📄 **FEATURES.md** - Dokumentasi detail semua fitur
-- 🚀 **QUICKSTART_NEW.md** - Panduan quick start
-- 📋 **IMPLEMENTATION_SUMMARY.md** - Summary implementasi
+## 📚 Dokumentasi
+
+Dokumentasi lengkap tersedia di:
+
+- 📄 [**README_COMPLETE.md**](README_COMPLETE.md) - Dokumentasi detail aplikasi
+- 🚀 [**FITUR_INOVATIF.md**](FITUR_INOVATIF.md) - Detail fitur inovatif
+- 📊 [**PRESENTASI.md**](PRESENTASI.md) - Panduan presentasi
+- 🔧 [**PLATFORM_COMPATIBILITY.md**](PLATFORM_COMPATIBILITY.md) - Platform guide
+- 📋 [**SUMMARY_DOKUMENTASI.md**](SUMMARY_DOKUMENTASI.md) - Summary dokumentasi
+
+---
 
 ## 🎯 Fitur yang Sudah Diimplementasikan
 
 - [x] CRUD lengkap dengan SharedPreferences
-- [x] Pie chart animasi untuk expense
-- [x] Pie chart animasi untuk income
+- [x] Pie chart animasi untuk expense & income
 - [x] Touch interaction pada chart
 - [x] Color-coded categories
 - [x] Legend dengan detail
@@ -251,46 +367,81 @@ flutter run
 - [x] Responsive design
 - [x] Smooth animations
 - [x] Empty states
+- [x] Share to WhatsApp
+- [x] Export to PDF
+- [x] Budget tracking
+- [x] Smart notifications (Daily reminder & Budget alert)
 
-## 🎉 Screenshots
+---
 
-### Beranda
+## 🎬 Screenshots
+
+### 🏠 Beranda
 - Saldo total dengan card gradient
 - Transaksi terbaru dengan swipe actions
 - Pull to refresh
 
-### Statistik
+### 📊 Statistik
 - Summary cards pemasukan & pengeluaran
 - Pie chart pengeluaran dengan animasi
 - Pie chart pemasukan dengan animasi
 - Legend interaktif
+- Export buttons (WhatsApp & PDF)
 
-### Tambah Transaksi
+### ➕ Tambah Transaksi
 - Form lengkap dengan validation
 - Category chips
 - Date picker
 - Loading state
 
-## 👨‍💻 Developer
+## 📊 Project Stats
 
-**Antigravity AI**
-- Framework: Flutter
-- Language: Dart
-- Architecture: Service Layer Pattern
-- State Management: setState (simple & effective)
+- **Total Files**: 25+ Dart files
+- **Total Lines**: 5000+ lines of code
+- **Dependencies**: 13 packages
+- **Platforms**: Web, Android, iOS
+- **APK Size**: ~47 MB
 
-## 📝 License
+---
 
-MIT License - Free to use for educational purposes
 
 ## 🙏 Credits
 
 - **fl_chart** - Beautiful charts library
 - **shared_preferences** - Local storage solution
 - **google_fonts** - Beautiful typography
+- **pdf** - PDF generation library
+- **url_launcher** - Deep linking support
+- **share_plus** - Native sharing functionality
 
 ---
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+---
+
+## 📞 Contact & Support
+
+Jika ada pertanyaan atau masalah, silakan buat issue di repository ini.
+
+---
+
+<div align="center">
 
 **Made with ❤️ for mahasiswa kos-kosan**
 
 Selamat mengelola keuangan! 💰✨
+
+---
+
+⭐ **Jangan lupa beri bintang jika project ini membantu!** ⭐
+
+</div>
