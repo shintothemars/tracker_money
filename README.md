@@ -5,6 +5,7 @@
 
 ![WhatsApp Image 2026-01-12 at 16 05 30 (1)](https://github.com/user-attachments/assets/8a325f1c-87e9-4038-b71e-fb5d53e03fd2)
 ![WhatsApp Image 2026-01-12 at 16 05 29](https://github.com/user-attachments/assets/0451fadc-2911-442f-8269-4a97575e5bd4)
+<img width="720" height="1600" alt="Screenshot_20260111-164031" src="https://github.com/user-attachments/assets/30c312f2-cb2f-4aaf-b1ed-fe5c802dfbaa" />
 ![WhatsApp Image 2026-01-12 at 16 05 30](https://github.com/user-attachments/assets/efc66874-b81c-4cbf-961c-6bab0dcb150d)
 
 ![Flutter](https://img.shields.io/badge/Flutter-3.0+-02569B?style=for-the-badge&logo=flutter)
